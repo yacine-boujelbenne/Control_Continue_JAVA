@@ -4,7 +4,6 @@ public class Taxi {
     private Localisation position;
     private final String matricule;
     private Demande demende = null;
-    public char[] getDemendeEtat;
 
     public Taxi(String matricule, Localisation position) {
         this.position = position;
