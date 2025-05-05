@@ -1,6 +1,6 @@
 import java.util.List;
 
-public interface Receveur_de_demande {
+public interface ReceveurDeDemande {
 
     public List<Demande> getNouvellesDemandes();
 

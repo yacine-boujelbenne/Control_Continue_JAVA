@@ -2,13 +2,13 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Central_de_reservation {
+public class CentralDeReservation {
     private double marge;
     private List<Taxi> flott;
     Routeur routeur;
     private List<Demande> demandesEnAttente;
 
-    public Central_de_reservation(List<Taxi> flott, List<Demande> demandesEnAttente, double marge) {
+    public CentralDeReservation(List<Taxi> flott, List<Demande> demandesEnAttente, double marge) {
         this.marge = marge;
         this.flott = flott;
         this.demandesEnAttente = demandesEnAttente;
@@ -45,7 +45,7 @@ public class Central_de_reservation {
     }
 
     public void traiterDemandes() {
-        routeur = new Routeur_Standard();
+        routeur = new RouteurStandard();
         for (Demande d : demandesEnAttente) {
 
             Taxi taxi = routeur.traiterDemande(flott, d);

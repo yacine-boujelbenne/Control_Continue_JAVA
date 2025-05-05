@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.List;
 
-public class Receveur_de_demende_Essai implements Receveur_de_demande {
+public class ReceveurDeDemendeEssai implements ReceveurDeDemande {
 
     @Override
     public List<Demande> getNouvellesDemandes() {

@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Routeur_Standard implements Routeur {
+public class RouteurStandard implements Routeur {
     @Override
     public Taxi traiterDemande(List<Taxi> flotte, Demande demande) {
         Taxi taxi = null;

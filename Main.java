@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Receveur_de_demande receveur = new Receveur_de_demende_Essai();
+        ReceveurDeDemande receveur = new ReceveurDeDemendeEssai();
         List<Demande> demandes = receveur.getNouvellesDemandes();
         List<Taxi> taxis = new LinkedList<>();
         Localisation localisationT1 = new Localisation(20, 50);
@@ -12,7 +12,7 @@ public class Main {
         taxis.add(new Taxi("T1", localisationT1));
         taxis.add(new Taxi("T2", localisationT2));
         taxis.add(new Taxi("T3", localisationT3));
-        Central_de_reservation central = new Central_de_reservation(taxis, demandes, 10);
+        CentralDeReservation central = new CentralDeReservation(taxis, demandes, 10);
         central.supprimer_Taxi("T1");
         central.traiterDemandes();
         for (Demande demande : demandes) {
